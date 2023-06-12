@@ -14,7 +14,7 @@ start=end-dt.timedelta(days=365)
 stocklist=['TATASTEEL','CGPOWER','TTML','HUDCO']
 stocks= [i+'.NS' for i in stocklist]
 dt.datetime(2022, 6, 6, 18, 53, 40, 938696)
-df=pdr.get_data_yahoo(stocks,start,end)
+df=yf.get_data_yahoo(stocks,start,end)
 print(df)
 st.title("DAY CLOSING")
 st.line_chart(df['Close'])
