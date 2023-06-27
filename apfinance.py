@@ -1,3 +1,4 @@
+# http://192.168.0.101:8501---> link for the app
 import streamlit as st
 import pandas as pd
 import yfinance as yf
